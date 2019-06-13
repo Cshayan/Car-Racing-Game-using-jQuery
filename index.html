@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Car Racer</title>
+    <link rel="icon" href="flag.ico" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <img src="Images/racing.png" alt="FLag" id="flag" />
+
+    <div id="score-container">
+      My Score - &nbsp;&nbsp;&nbsp;
+      <span id="score">0</span>
+    </div>
+
+    <div id="instruction-container">
+      <h1>Instructions:-</h1>
+      <p>
+        1. Press the <i class="fas fa-arrow-up"></i>,
+        <i class="fas fa-arrow-down"></i>, <i class="fas fa-arrow-left"></i> and
+        <i class="fas fa-arrow-right"></i> keys for moving the car.
+      </p>
+      <p>2. Try to dodge all the other cars in the road.</p>
+    </div>
+
+    <!-- Road starts here -->
+    <div id="container">
+      <!-- Road Lines -->
+      <div id="line-1" class="line"></div>
+      <div id="line-2" class="line"></div>
+      <div id="line-3" class="line"></div>
+      <!-- Road Lines end here -->
+
+      <!-- Our car -->
+      <div id="car" class="car">
+        <div class="f-glass"></div>
+        <div class="b-glass"></div>
+        <div class="f-light-left"></div>
+        <div class="f-light-right"></div>
+        <div class="f-tyre-left"></div>
+        <div class="f-tyre-right"></div>
+        <div class="b-tyre-left"></div>
+        <div class="b-tyre-right"></div>
+      </div>
+      <!-- Our car ends here -->
+
+      <!-- Opponent car -->
+      <div id="car-1" class="car">
+        <div class="f-glass"></div>
+        <div class="b-glass"></div>
+        <div class="f-light-left"></div>
+        <div class="f-light-right"></div>
+        <div class="f-tyre-left"></div>
+        <div class="f-tyre-right"></div>
+        <div class="b-tyre-left"></div>
+        <div class="b-tyre-right"></div>
+      </div>
+      <div id="car-2" class="car">
+        <div class="f-glass"></div>
+        <div class="b-glass"></div>
+        <div class="f-light-left"></div>
+        <div class="f-light-right"></div>
+        <div class="f-tyre-left"></div>
+        <div class="f-tyre-right"></div>
+        <div class="b-tyre-left"></div>
+        <div class="b-tyre-right"></div>
+      </div>
+      <div id="car-3" class="car">
+        <div class="f-glass"></div>
+        <div class="b-glass"></div>
+        <div class="f-light-left"></div>
+        <div class="f-light-right"></div>
+        <div class="f-tyre-left"></div>
+        <div class="f-tyre-right"></div>
+        <div class="b-tyre-left"></div>
+        <div class="b-tyre-right"></div>
+      </div>
+      <!-- Opponent car ends here -->
+
+      <!-- Restart button -->
+      <div id="restart-container">
+        Game Over!
+        <button id="restart">
+          Restart
+          <div class="small-text">(press enter)</div>
+        </button>
+      </div>
+      <!-- Restart container -->
+
+      <!-- Start Game container -->
+      <div id="start-game-container">
+        Start the game!
+        <button id="start">
+          Race!
+          <div class="small-text">(press enter)</div>
+        </button>
+      </div>
+      <!-- Ends here -->
+
+      <div id="message">
+        <div id="message-time">0</div>
+        <div class="small-text">Ready, steady, go...</div>
+      </div>
+    </div>
+    <!-- Road ends here -->
+
+    <img src="Images/OHlogoBETA.png" alt="logo" id="logo" />
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
